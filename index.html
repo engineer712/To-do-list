@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <h1>To-do List📋</h1>
+    <br>
+    
+    <div class = "container">
+        <input type = "text" 
+            onkeydown="if (event.key == 'Enter'){
+                Add();
+            }"
+            id = "task"    
+            name = "todolist" 
+            required placeholder="Enter a task"
+        > 
+        <input type = "date"
+            onkeydown="if(event.key == 'Enter'){
+                Add();
+            }"
+            id = "task" required class = "date"
+        >
+        <button type = "submit" onclick="
+            Add();   
+            ">Add
+        </button>
+    </div>
+
+    <p id = "taskcounter"> Task Counter: </p>
+
+    <p id = "html"> </p>
+
+    <button id = "clear" onclick = "clearCompleted();">Clear Completed Tasks</button>
+    <script src = "script.js"></script>
+    <footer>
+        © 2026 No pixels were harmed in making this site.
+    </footer>
+</body>
+</html>
